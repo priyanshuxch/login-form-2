@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #be2edd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.wrapper .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.wrapper .media-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.media-links div {
+    width: 165px;
+    font-size: 18px;
+    padding: 12px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.media-links .fb {
+    background-color: #4267b2;
+}
+
+.media-links .fb:hover {
+    background-color: #375695;
+}
+
+.media-links .twitter {
+    background-color: #1DA1F2;
+}
+
+.media-links .twitter:hover {
+    background-color: #0d8bd9;
+}
+
+.wrapper form input {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    padding-left: 40px;
+    border-radius: 10px;
+    outline: none;
+    margin: 5px 0 10px 0;
+    border: 0.1px solid lightgray;
+}
+
+form .pwd-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+form .pwd-box .remember-pwd {
+    display: flex;
+    align-items: center;
+}
+
+form .pwd-box .remember-pwd input {
+    width: 15px;
+    height: 15px;
+    margin: 0 7px 0 0;
+}
+
+form .pwd-box .forgot-pwd a {
+    text-decoration: none;
+    color: #be2edd;
+}
+
+form .pwd-box .forgot-pwd a:hover {
+    text-decoration: underline;
+}
+
+form .btn {
+    width: 100%;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px 0;
+    color: #fff;
+    background-color: #be2edd;
+    transition: all 0.3s ease;
+}
+
+form .btn:hover {
+    background-color: #a720c5;
+}
+
+.wrapper .signup-link {
+    text-align: center;
+}
+
+.signup-link span {
+    font-size: 16px;
+}
+
+.signup-link span a {
+    text-decoration: none;
+    color: #be2edd;
+    font-weight: 400;
+}
+
+.signup-link span a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:392px) {
+    .wrapper .media-links {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .media-links div {
+        width: 100%;
+    }
+
+    .media-links div:first-child {
+        margin-bottom: 5px;
+    }
+
+    .media-links div:last-child {
+        margin-top: 5px;
+    }
+}
+
+@media (width:350px) {
+    .pwd-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pwd-box .forgot-pwd a {
+        font-size: 20px;
+    }
+}
